@@ -203,6 +203,9 @@ bar {
 bindsym mod1+d exec "rofi -show run"
 bindsym mod1+Tab exec "rofi -show window"
 
+# set backgroud
+exec_always --no-startup-id nitrogen --set-zoom-fill ~/Pictures/backgound/bg.jpg
+
 # i3 blocks config
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+10 i3blocks
 bindsym --release Num_Lock  exec pkill -SIGRTMIN+10 i3blocks
