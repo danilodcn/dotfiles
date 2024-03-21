@@ -2,10 +2,10 @@ live_config_reload: true
 
 shell:
   program: /bin/zsh
-  args:
-    - -l
-    - -c
-    - "/opt/homebrew/bin/tmux new-session -A -s main"
+  # args:
+  #   - -l
+  #   - -c
+  #   - "/opt/homebrew/bin/tmux new-session -A -s main"
 
 env:
   TERM: "xterm-256color"
