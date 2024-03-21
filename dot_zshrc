@@ -33,7 +33,7 @@ alias spec='bin/rspec $(git ls-files --modified --others spec | grep -v factorie
 alias rspec='bin/rspec'
 
 # Zplug
-export ZPLUG_HOME=/opt/homebrew/opt/zplug
+export ZPLUG_HOME=/usr/share/zplug
 export ZPLUG_PROTOCOL=https
 source $ZPLUG_HOME/init.zsh
 
