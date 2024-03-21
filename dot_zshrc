@@ -32,6 +32,14 @@ alias cop="git add -N .; git diff --name-only | grep '.rb\|.rake' | grep -v .erb
 alias spec='bin/rspec $(git ls-files --modified --others spec | grep -v factories)'
 alias rspec='bin/rspec'
 
+plugins=(
+    git asdf pyenv httpie node npm python go pip vscode yarn pylint pyenv 
+    docker docker-compose django aws github gitignore curl
+    zsh-autosuggestions zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
 # Zplug
 export ZPLUG_HOME=/usr/share/zplug
 export ZPLUG_PROTOCOL=https
@@ -54,7 +62,8 @@ fi
 zplug load
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="fino"
 
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 
